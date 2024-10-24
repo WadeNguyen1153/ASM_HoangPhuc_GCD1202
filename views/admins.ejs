@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <meta http-equiv="refresh" content="30"> <!-- Tự động làm mới trang sa  u 30 giây -->
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <!-- Hiển thị danh sách dropdown chọn Shop -->
+    <div>
+      <h3>Select Shop</h3>
+      <%- droplist %> <!-- Chèn dropdown list vào đây -->
+    </div>
+
+    <!-- Hiển thị bảng sản phẩm -->
+    <div>
+      <h3>Product List</h3>
+      <%- products_table %> <!-- Chèn bảng sản phẩm vào đây -->
+    </div>
+
+    <!-- Nút đăng xuất -->
+    <div>
+      <a href="/logout">Logout</a>
+    </div>
+
+    <!-- Hiển thị danh sách người dùng -->
+    <div>
+      <h2>User List</h2>
+      <%- users_table %> <!-- Chèn bảng users vào đây -->
+    </div>
+    
+  </body>
+</html>
